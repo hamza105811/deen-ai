@@ -145,10 +145,10 @@ def main():
     application.add_handler(CommandHandler("help", help_command))
     application.add_handler(CommandHandler("clear", clear_command))
     application.add_handler(CallbackQueryHandler(button_handler))
-    application.add_handler(MessageHandler(filters.TEXT & \~filters.COMMAND, handle_message))
+    application.add_handler(MessageHandler(filters.TEXT & filters.COMMAND, handle_message))
 
     print("🚀 DeenAI Bot Started (python-telegram-bot version)")
     application.run_polling()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()

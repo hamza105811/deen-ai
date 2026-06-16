@@ -1,7 +1,5 @@
 aiogram==3.20.0
 python-dotenv==1.0.1
-httpx==0.28.1
-# For production (optional but recommended):
-# redis==5.2.1          # for persistent user history
-# uvicorn==0.34.0
-# fastapi==0.115.6      # if you want to switch to webhook later
+httpx==0.27.0
+pydantic==2.7.4
+pydantic-core==2.18.4
